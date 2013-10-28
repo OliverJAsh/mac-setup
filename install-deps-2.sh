@@ -44,6 +44,11 @@ read
 echo "Provide license"
 read
 
+git clone git@github.com:SublimeLinter/SublimeLinter.git
+cd SublimeLinter
+git checkout sublime-text-3
+git cherry-pick 4ed28de
+
 cd -
 
 #
