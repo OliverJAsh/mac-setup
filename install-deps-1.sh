@@ -55,7 +55,6 @@ read
 brew cask alfred link
 echo "Check that linking Alfred worked. If not, DIY."
 read
-brew cask alfred link
 
 brew cask install sublime-text-3
 # Link `subl` binary
