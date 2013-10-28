@@ -96,7 +96,6 @@ cd .dotfiles
 git remote set-url origin git@github.com:OliverJAsh/dotfiles.git
 git fetch
 ./dotfiles/setup.sh
-chmod 600 ~/.ssh/id_rsa
 
 #
 # Zsh Setup
