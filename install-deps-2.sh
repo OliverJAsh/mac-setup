@@ -88,3 +88,6 @@ read
 
 # Divvy
 ln -s ~/Dropbox/Preferences/com.mizage.Divvy.plist ~/Library/Preferences/com.mizage.Divvy.plist
+
+# TODO: keep?
+# sudo xcodebuild -license
