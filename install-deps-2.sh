@@ -47,7 +47,7 @@ read
 git clone git@github.com:SublimeLinter/SublimeLinter.git
 cd SublimeLinter
 git checkout sublime-text-3
-git cherry-pick 4ed28de
+hub merge https://github.com/SublimeLinter/SublimeLinter/pull/447
 
 cd -
 
