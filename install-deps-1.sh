@@ -90,6 +90,9 @@ sudo nave usemain stable
 echo -e "${green}Setting up dotfiles${plain}"
 
 git clone --recursive https://github.com/OliverJAsh/dotfiles.git "${HOME}/.zprezto"
+git remote rename origin OliverJAsh
+git remote add origin git@github.com:sorin-ionescu/prezto.git
+git fetch origin
 # Superstition
 cd; ~/.dotfiles/setup.sh
 cd .dotfiles
