@@ -112,7 +112,9 @@ echo -e "${green}Setting up (and installing) Zsh${plain}"
 echo "/usr/local/bin/zsh" | sudo tee -a /etc/shells
 # Fix “Apple miss configuration”
 sudo mv /etc/zshenv /etc/zprofile
+# TODO: do we need both?
 chsh -s /usr/local/bin/zsh
+sudo chsh -s /usr/local/bin/zsh
 echo "Install Droid Sans Mono from http://www.fontsquirrel.com/fonts/droid-sans-mono"
 read
 echo "Set iTerm to load preferences from /Users/Oliver/Dropbox/Preferences"
