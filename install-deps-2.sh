@@ -61,6 +61,9 @@ brew install hub
 echo "Authenticate Hub by attempting to talk to the API (lame)."
 read
 
+brew install gist
+gist --login
+
 brew cask install xld
 echo "Configure XLD to output as Apple Lossless and to NAS"
 read
