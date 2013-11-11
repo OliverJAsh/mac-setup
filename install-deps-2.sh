@@ -77,6 +77,10 @@ brew install z
 brew install --devel mongodb
 brew install youtube-dl
 
+brew cask install knock
+echo "Setup Knock to Unlock"
+read
+
 sudo gem install airplayer
 sudo gem install compass
 
