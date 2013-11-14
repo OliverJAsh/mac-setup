@@ -76,6 +76,8 @@ brew install coreutils
 # Install a newer version and one that we can manage
 brew install zsh
 
+brew install wget
+
 # Install the latest stable nave the node.js environment switcher Node.js
 sudo sh -c 'curl -fsSL https://raw.github.com/isaacs/nave/master/nave.sh > /usr/local/bin/nave && chmod ugo+x /usr/local/bin/nave'
 
