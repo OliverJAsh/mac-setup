@@ -81,6 +81,10 @@ brew cask install knock
 echo "Setup Knock to Unlock"
 read
 
+brew cask install kaleidoscope
+echo "Apply license for Kaleidoscope and switch on intergration"
+read
+
 sudo gem install airplayer
 sudo gem install compass
 
