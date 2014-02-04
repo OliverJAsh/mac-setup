@@ -49,3 +49,6 @@ echo "Set user avatar"
 read
 
 echo "Setup signatures in Mail.app"
+
+# Prevent error from having too many files open
+launchctl limit maxfiles 2048 2048
