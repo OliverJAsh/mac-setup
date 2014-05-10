@@ -34,7 +34,7 @@ sudo mkdir /opt
 sudo chflags hidden /opt
 
 # Install homebrew-cask for easily installing application binaries
-brew tap phinze/homebrew-cask
+brew tap caskroom/cask
 brew install brew-cask
 
 brew cask install one-password
