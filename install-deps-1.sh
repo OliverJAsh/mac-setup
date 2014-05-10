@@ -35,6 +35,8 @@ sudo chflags hidden /opt
 
 # Install homebrew-cask for easily installing application binaries
 brew tap caskroom/cask
+# Betas, etc
+brew tap caskroom/versions
 brew install brew-cask
 
 brew cask install one-password
