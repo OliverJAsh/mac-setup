@@ -54,8 +54,8 @@ brew cask install xld
 echo "Configure XLD to output as Apple Lossless and to NAS"
 read
 
-brew cask install rdio
-echo "Login to Rdio"
+brew cask install spotify
+echo "Login to Spotify"
 read
 
 brew install z
