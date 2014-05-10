@@ -26,7 +26,7 @@ sudo xcode-select --install
 java
 
 # Install homebrew
-ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
+ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 
 # homebrew-cask apps directory
 sudo mkdir /opt
