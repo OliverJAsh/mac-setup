@@ -10,15 +10,6 @@ source "$HOME/Dropbox/Scripts/Setup/lib/colours.sh"
 echo "Check that the fonts are set correctly (regular and non-ASCII)"
 read
 
-# Standard Prezto install script, as per: https://github.com/sorin-ionescu/prezto
-git clone --recursive git@github.com:OliverJAsh/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
-
-setopt EXTENDED_GLOB
-for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N)
-do
-  ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
-done
-
 rm -rf .bash*
 
 #
