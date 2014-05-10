@@ -67,6 +67,10 @@ brew cask install kaleidoscope
 echo "Apply license for Kaleidoscope and switch on intergration"
 read
 
+brew install rbenv ruby-build
+rbenv install 2.0.0-p247
+rbenv global 2.0.0-p247
+
 gem install airplayer
 
 npm install -g plumber bower http-server
