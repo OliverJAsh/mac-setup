@@ -64,7 +64,7 @@ brew cask install google-chrome-canary
 echo "Open Chrome and set up accounts for syncing + extensions."
 read
 
-brew cask install iterm2
+brew cask install iterm2-nightly
 
 brew install trash
 
