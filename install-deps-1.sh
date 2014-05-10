@@ -59,8 +59,6 @@ echo "Check that linking Alfred worked. If not, DIY."
 read
 
 brew cask install sublime-text3
-# Link `subl` binary
-ln -s /Users/Oliver/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
 
 brew cask install google-chrome-canary
 echo "Open Chrome and set up accounts for syncing + extensions."
