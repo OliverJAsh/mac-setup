@@ -67,9 +67,9 @@ brew cask install kaleidoscope
 echo "Apply license for Kaleidoscope and switch on intergration"
 read
 
-sudo gem install airplayer
+gem install airplayer
 
-sudo npm install -g grunt-cli bower http-server
+npm install -g grunt-cli bower http-server
 
 #
 # Manual work
