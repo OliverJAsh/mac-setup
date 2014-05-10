@@ -63,10 +63,6 @@ brew install z
 brew install --devel mongodb
 brew install youtube-dl
 
-brew cask install knock
-echo "Setup Knock to Unlock"
-read
-
 brew cask install kaleidoscope
 echo "Apply license for Kaleidoscope and switch on intergration"
 read
