@@ -69,7 +69,7 @@ read
 
 gem install airplayer
 
-npm install -g grunt-cli bower http-server
+npm install -g plumber bower http-server
 
 #
 # Manual work
