@@ -112,8 +112,6 @@ git fetch origin
 echo -e "${green}Setting up (and installing) Zsh${plain}"
 
 echo "/usr/local/bin/zsh" | sudo tee -a /etc/shells
-# Fix “Apple miss configuration”
-sudo mv /etc/zshenv /etc/zprofile
 # TODO: do we need both?
 chsh -s /usr/local/bin/zsh
 sudo chsh -s /usr/local/bin/zsh
