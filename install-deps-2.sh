@@ -68,7 +68,6 @@ echo "Apply license for Kaleidoscope and switch on intergration"
 read
 
 sudo gem install airplayer
-sudo gem install compass
 
 sudo npm install -g grunt-cli bower http-server
 
