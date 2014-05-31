@@ -39,6 +39,8 @@ brew tap caskroom/cask
 brew tap caskroom/versions
 brew install brew-cask
 
+brew cask install dash
+
 brew cask install one-password
 echo "Open 1Password for configuration"
 read
