@@ -90,5 +90,12 @@ read
 # Divvy
 ln -s ~/Dropbox/Preferences/com.mizage.Divvy.plist ~/Library/Preferences/com.mizage.Divvy.plist
 
+brew cask install virtualbox422492790
+echo "Change VirtualBox’ VMs folder to removable drive"
+read
+
+echo "Import VMs from removable drive"
+read
+
 # TODO: keep?
 # sudo xcodebuild -license
