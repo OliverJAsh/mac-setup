@@ -1,6 +1,10 @@
 echo "Set setting: System Preferences > Security & Privacy > General > Allow apps to be downloaded from: Anywhere"
 read
 
+# Finder: show all filename extensions
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+killall Finder
+
 # Disable the “Are you sure you want to open this application?” dialog
 defaults write com.apple.LaunchServices LSQuarantine -bool false
 
