@@ -106,3 +106,9 @@ brew install z
 brew cask install kaleidoscope
 echo "Apply license for Kaleidoscope and switch on intergration"
 read
+
+brew install rbenv
+brew install ruby-build
+rbenv install --list
+echo "Install Ruby version, then `rbenv global x`"
+read
