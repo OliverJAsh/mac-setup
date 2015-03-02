@@ -12,12 +12,8 @@ defaults write com.apple.LaunchServices LSQuarantine -bool false
 # (e.g. enable Tab in modal dialogs)
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
-# Hide Spotlight icon from menu bar
-sudo mv /System/Library/CoreServices/Search.bundle /System/Library/CoreServices/Search.bundle.bak
-killall SystemUIServer
-
 # Don’t show Dashboard as a Space
-defaults write com.apple.dock dashboard-in-overlay -bool true
+# defaults write com.apple.dock dashboard-in-overlay -bool true
 
 # Trackpad: enable tap to click for this user and for the login screen
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
@@ -53,6 +49,3 @@ echo "Set user avatar"
 read
 
 echo "Setup signatures in Mail.app"
-
-# Prevent error from having too many files open
-launchctl limit maxfiles 2048 2048
