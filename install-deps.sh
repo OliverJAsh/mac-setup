@@ -26,7 +26,7 @@ echo "Open Dropbox for configuration"
 read
 
 brew cask install 1password
-echo "Open 1Password for configuration"
+echo "Open 1Password for configuration and apply license"
 read
 
 brew cask install sublime-text-dev
