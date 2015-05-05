@@ -81,8 +81,6 @@ npm install --global jshint
 echo "Open Sublime for configuration, and install Package Control"
 read
 
-brew install trash
-
 rm -rf .bash*
 
 #
