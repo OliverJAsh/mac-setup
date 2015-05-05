@@ -107,7 +107,7 @@ read
 brew install rbenv
 brew install ruby-build
 rbenv install --list
-echo "Install Ruby version, then `rbenv global x`"
+echo "Install Ruby version, then "rbenv global <x>""
 read
 
 # JDK -> JRE -> JVM
