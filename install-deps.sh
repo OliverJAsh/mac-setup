@@ -10,8 +10,6 @@ cd ~
 
 sudo xcode-select --install
 
-java
-
 # Install homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
@@ -112,3 +110,6 @@ brew install ruby-build
 rbenv install --list
 echo "Install Ruby version, then `rbenv global x`"
 read
+
+# JDK -> JRE -> JVM
+brew cask install java
