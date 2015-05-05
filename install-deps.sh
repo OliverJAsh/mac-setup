@@ -91,6 +91,10 @@ brew install hub
 echo "Authenticate Hub by attempting to talk to the API (lame)."
 read
 
+hub clone OliverJAsh/st ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+echo "Open Sublime Text and install Package Control"
+read
+
 brew install gist
 gist --login
 
