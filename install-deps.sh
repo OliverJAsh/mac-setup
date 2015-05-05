@@ -16,7 +16,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew install git
 
 # Install homebrew-cask for easily installing application binaries
-# appdir
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 brew install caskroom/cask/brew-cask
 # ST3
 brew tap caskroom/versions
