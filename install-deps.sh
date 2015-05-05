@@ -111,5 +111,8 @@ echo "Install Ruby version, then "rbenv global <x>""
 read
 
 npm install -g trash
+
+brew install tree
+
 # JDK -> JRE -> JVM
 brew cask install java
