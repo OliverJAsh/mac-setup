@@ -42,10 +42,5 @@ echo "Done. Note that some of these changes require a logout/restart to take eff
 # Manual
 #
 
-echo "Disable guest account"
-read
-
 echo "Set user avatar"
 read
-
-echo "Setup signatures in Mail.app"
