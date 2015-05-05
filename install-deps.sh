@@ -15,9 +15,6 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 brew install git
 
-# homebrew-cask apps directory
-sudo mkdir /opt
-
 # Install homebrew-cask for easily installing application binaries
 # appdir
 brew install caskroom/cask/brew-cask
