@@ -45,6 +45,7 @@ sudo sh -c 'echo "/usr/local/bin/zsh" >> /etc/shells'
 chsh -s /usr/local/bin/zsh
 
 ln -s ~/Google\ Drive/Dotfiles/.gitconfig
+ln -s ~/Google\ Drive/Dotfiles/.gitignore
 ln -s ~/Google\ Drive/Dotfiles/.ssh
 ln -s ~/Google\ Drive/Dotfiles/.zshrc
 ln -s ~/Google\ Drive/Dotfiles/.mongorc.js
