@@ -34,8 +34,11 @@ read
 brew cask install sublime-text-dev
 
 brew cask install google-chrome
-brew cask install google-chrome-canary
+brew cask install google-chrome-dev
 echo "Open Chrome and set up accounts for syncing + extensions."
+read
+
+echo "Set Google Chrome Dev as default web browser"
 read
 
 brew cask install google-drive
