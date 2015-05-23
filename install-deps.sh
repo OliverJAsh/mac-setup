@@ -15,6 +15,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 # Use zsh's built-in completions, i.e. /usr/local/Cellar/zsh/<version>/share/zsh/functions/_git
 brew install --without-completions git
+brew install zsh-completions
 
 # Install homebrew-cask for easily installing application binaries
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
