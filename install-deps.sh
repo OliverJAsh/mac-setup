@@ -54,6 +54,7 @@ ln -s ~/Google\ Drive/Dotfiles/.gitconfig
 ln -s ~/Google\ Drive/Dotfiles/.gitignore
 ln -s ~/Google\ Drive/Dotfiles/.ssh
 ln -s ~/Google\ Drive/Dotfiles/.zshrc
+ln -s ~/Google\ Drive/Dotfiles/.zprofile
 ln -s ~/Google\ Drive/Dotfiles/.mongorc.js
 
 echo "Setup Google accounts on Mac"
@@ -61,11 +62,12 @@ read
 
 brew install zsh-history-substring-search
 
-# Install the latest stable nave the node.js environment switcher Node.js
-curl -fsSL https://raw.github.com/isaacs/nave/master/nave.sh > /usr/local/bin/nave && chmod ugo+x /usr/local/bin/nave
+brew install nvm
+mkdir ~/.nvm
+cp $(brew --prefix nvm)/nvm-exec ~/.nvm/
 
-# Install a global node.js
-nave usemain stable
+nvm install stable
+nvm alias default stable
 
 npm install --global pure-prompt
 
