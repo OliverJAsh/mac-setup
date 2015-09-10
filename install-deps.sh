@@ -54,7 +54,7 @@ ln -s ~/Google\ Drive/Dotfiles/.gitconfig
 ln -s ~/Google\ Drive/Dotfiles/.gitignore
 ln -s ~/Google\ Drive/Dotfiles/.ssh
 ln -s ~/Google\ Drive/Dotfiles/.zshrc
-ln -s ~/Google\ Drive/Dotfiles/.zprofile
+ln -s ~/Google\ Drive/Dotfiles/.zshenv
 ln -s ~/Google\ Drive/Dotfiles/.mongorc.js
 
 echo "Setup Google accounts on Mac"
