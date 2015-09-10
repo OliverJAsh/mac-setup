@@ -56,6 +56,7 @@ ln -s ~/Google\ Drive/Dotfiles/.ssh
 ln -s ~/Google\ Drive/Dotfiles/.zshrc
 ln -s ~/Google\ Drive/Dotfiles/.zshenv
 ln -s ~/Google\ Drive/Dotfiles/.mongorc.js
+ln -s ~/Google\ Drive/Dotfiles/.eslintrc
 
 echo "Setup Google accounts on Mac"
 read
