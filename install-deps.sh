@@ -58,6 +58,10 @@ ln -s ~/Google\ Drive/Dotfiles/.zshenv
 ln -s ~/Google\ Drive/Dotfiles/.mongorc.js
 ln -s ~/Google\ Drive/Dotfiles/.eslintrc
 
+ln -s ~/Desktop/git-merge-pr /usr/local/bin/git-merge-pr
+ln -s ~/Desktop/git-browse-pr /usr/local/bin/git-browse-pr
+ln -s ~/Desktop/_git-merge-pr /usr/local/share/zsh/site-functions/_git_merge-pr
+
 echo "Setup Google accounts on Mac"
 read
 
