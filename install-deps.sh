@@ -19,7 +19,7 @@ brew install zsh-completions
 
 # Install homebrew-cask for easily installing application binaries
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-brew install caskroom/cask/brew-cask
+brew tap caskroom/cask
 # ST3
 brew tap caskroom/versions
 
@@ -49,19 +49,22 @@ brew install zsh
 sudo sh -c 'echo "/usr/local/bin/zsh" >> /etc/shells'
 chsh -s /usr/local/bin/zsh
 
-ln -s ~/Google\ Drive/Dotfiles/.editorconfig
-ln -s ~/Google\ Drive/Dotfiles/.gitconfig
-ln -s ~/Google\ Drive/Dotfiles/.gitignore
-ln -s ~/Google\ Drive/Dotfiles/.ssh
-ln -s ~/Google\ Drive/Dotfiles/.zshrc
-ln -s ~/Google\ Drive/Dotfiles/.zshenv
-ln -s ~/Google\ Drive/Dotfiles/.zprofile
-ln -s ~/Google\ Drive/Dotfiles/.mongorc.js
-ln -s ~/Google\ Drive/Dotfiles/.eslintrc
+# hub credentials
+ln -sf ~/Google\ Drive/Computer/Dotfiles/.config
+# gist credentials
+ln -sf ~/Google\ Drive/Computer/Dotfiles/.gist
+ln -sf ~/Google\ Drive/Computer/Dotfiles/.editorconfig
+ln -sf ~/Google\ Drive/Computer/Dotfiles/.gitconfig
+ln -sf ~/Google\ Drive/Computer/Dotfiles/.gitignore
+ln -sf ~/Google\ Drive/Computer/Dotfiles/.ssh
+ln -sf ~/Google\ Drive/Computer/Dotfiles/.zshrc
+ln -sf ~/Google\ Drive/Computer/Dotfiles/.zprofile
+ln -sf ~/Google\ Drive/Computer/Dotfiles/.mongorc.js
+ln -sf ~/Google\ Drive/Computer/Dotfiles/.eslintrc
 
-ln -s ~/Desktop/git-merge-pr /usr/local/bin/git-merge-pr
-ln -s ~/Desktop/git-browse-pr /usr/local/bin/git-browse-pr
-ln -s ~/Desktop/_git-merge-pr /usr/local/share/zsh/site-functions/_git_merge-pr
+ln -sf ~/Desktop/Custom\ commands/git-merge-pr /usr/local/bin/git-merge-pr
+ln -sf ~/Desktop/Custom\ commands/git-browse-pr /usr/local/bin/git-browse-pr
+ln -sf ~/Desktop/Custom\ commands/_git-merge-pr /usr/local/share/zsh/site-functions/_git_merge-pr
 
 echo "Setup Google accounts on Mac"
 read
@@ -70,7 +73,6 @@ brew install zsh-history-substring-search
 
 brew install nvm
 mkdir ~/.nvm
-cp $(brew --prefix nvm)/nvm-exec ~/.nvm/
 
 nvm install stable
 nvm alias default stable
@@ -84,15 +86,11 @@ brew cask install iterm2-nightly
 echo "Sync iTerm2 settings"
 read
 
-echo "Install iTerm2 theme (base16-chalk and Tomorrow Night Eighties): https://github.com/chriskempson/base16-iterm2; https://github.com/chriskempson/tomorrow-theme/tree/master/iTerm2"
-echo "Install Terminal theme (Tomorrow Night Eighties): https://github.com/chriskempson/tomorrow-theme/tree/master/OS%20X%20Terminal"
-
 brew tap caskroom/fonts
 
 brew cask install font-source-code-pro
 
 git clone git@github.com:OliverJAsh/st.git ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
-npm install --global jshint
 
 echo "Open Sublime for configuration, and install Package Control"
 read
@@ -107,17 +105,15 @@ brew install hub
 echo "Authenticate Hub by attempting to talk to the API (lame)."
 read
 
-hub clone OliverJAsh/st ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
-echo "Open Sublime Text and install Package Control"
-read
-
 brew install gist
-gist --login
 
 brew install z
 
 brew cask install kaleidoscope
 echo "Apply license for Kaleidoscope and switch on intergration"
+read
+
+echo "Apply license for 1Password"
 read
 
 brew install rbenv
@@ -132,3 +128,11 @@ brew install tree
 
 # JDK -> JRE -> JVM
 brew cask install java
+
+brew cask install intellij-idea
+
+npm install -g diff-so-fancy
+
+brew cask install visual-studio-code
+
+sudo find / -name ".DS_Store" -depth -exec rm {} \;
