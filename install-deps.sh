@@ -119,8 +119,13 @@ read
 brew install rbenv
 brew install ruby-build
 rbenv install --list
+# rbenv install x
 echo "Install Ruby version, then "rbenv global <x>""
 read
+
+# rbenv local x
+
+gem install bundler
 
 npm install -g trash
 
