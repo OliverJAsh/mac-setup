@@ -136,3 +136,6 @@ npm install -g diff-so-fancy
 brew cask install visual-studio-code
 
 sudo find / -name ".DS_Store" -depth -exec rm {} \;
+
+brew install awscli
+brew install s3cmd
