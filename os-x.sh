@@ -22,16 +22,34 @@ defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
 # Use scroll gesture with the Ctrl (^) modifier key to zoom
 defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
-defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
-
-# Turn off keyboard illumination when computer is not used for 10 seconds
-defaults write com.apple.BezelServices kDimTime -int 10
+defaults write com.apple.universalaccess closeViewSmoothImages -int 0
 
 # Don't create .DS_Store files on network drives
-defaults write com.apple.desktopservices DSDontWriteNetworkStores true
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+
+defaults write com.apple.dock showAppExposeGestureEnabled -bool true
+
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -bool true
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerHorizSwipeGesture -bool false
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerVertSwipeGesture -bool false
+defaults write com.apple.AppleBluetoothMultitouchTrackpad TrackpadThreeFingerDrag -bool true
+defaults write com.apple.AppleBluetoothMultitouchTrackpad TrackpadThreeFingerHorizSwipeGesture -bool false
+defaults write com.apple.AppleBluetoothMultitouchTrackpad TrackpadThreeFingerVertSwipeGesture -bool false
+
+defaults write "Apple Global Domain" AppleAquaColorVariant -int 6
+defaults write "Apple Global Domain" AppleInterfaceStyle -string "Dark"
+
+# defaults read com.apple.finder DesktopViewSettings IconViewSettings arrangeBy
+
+# Set Desktop as the default location for new Finder windows
+# For other paths, use `PfLo` and `file:///full/path/here/`
+# PfHm for home
+defaults write com.apple.finder NewWindowTarget -string "PfHm”
+defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/“
+
+defaults write com.apple.dock persistent-apps -array
 
 # TODO: set default browser
-# TODO: three finger drag
 
 for app in "SystemUIServer"; do
   killall "$app" > /dev/null 2>&1
