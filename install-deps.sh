@@ -89,6 +89,7 @@ read
 brew tap caskroom/fonts
 
 brew cask install font-source-code-pro
+brew cask install font-didact-gothic
 
 git clone git@github.com:OliverJAsh/st.git ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 
