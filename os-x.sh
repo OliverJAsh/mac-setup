@@ -49,11 +49,12 @@ defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/“
 
 defaults write com.apple.dock persistent-apps -array
 
+# Show date
+defaults write com.apple.menuextra.clock DateFormat -string "EEE d MMM  HH:mm"
+
 # TODO: set default browser
 
-for app in "SystemUIServer"; do
-  killall "$app" > /dev/null 2>&1
-done
+killall SystemUIServer
 echo "Done. Note that some of these changes require a logout/restart to take effect."
 
 #
