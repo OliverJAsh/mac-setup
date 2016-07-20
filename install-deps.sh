@@ -145,3 +145,5 @@ sudo find / -name ".DS_Store" -depth -exec rm {} \;
 
 brew install awscli
 brew install s3cmd
+
+brew install zsh-completions
