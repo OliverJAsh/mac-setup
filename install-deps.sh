@@ -147,3 +147,5 @@ brew install awscli
 brew install s3cmd
 
 brew install zsh-completions
+
+brew cask install colorpicker-skalacolor
