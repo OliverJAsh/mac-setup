@@ -149,3 +149,6 @@ brew install s3cmd
 brew install zsh-completions
 
 brew cask install colorpicker-skalacolor
+
+# ghead -n-1 etc.
+brew install coreutils
