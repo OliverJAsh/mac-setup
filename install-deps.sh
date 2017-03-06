@@ -49,8 +49,17 @@ brew install zsh
 sudo sh -c 'echo "/usr/local/bin/zsh" >> /etc/shells'
 chsh -s /usr/local/bin/zsh
 
-# hub credentials
-ln -sf ~/Google\ Drive/Computer/Dotfiles/.config
+# hub, heroku credentials, etc.
+# ln -sf ~/Google\ Drive/Computer/Dotfiles/.config
+# We link individual directories instead of the whole config dir because it
+# may include large directories that we don't want to sync, i.e. yarn's node_modules
+# https://github.com/yarnpkg/yarn/issues/630#issuecomment-277837483
+mkdir -p ~/.config
+ln -sf ~/Google\ Drive/Computer/Dotfiles/.config/configstore ~/.config/configstore
+ln -sf ~/Google\ Drive/Computer/Dotfiles/.config/git ~/.config/git
+ln -sf ~/Google\ Drive/Computer/Dotfiles/.config/heroku ~/.config/heroku
+ln -sf ~/Google\ Drive/Computer/Dotfiles/.config/hub ~/.config/hub
+ln -sf ~/Google\ Drive/Computer/Dotfiles/.config/menus ~/.config/menus
 # gist credentials
 ln -sf ~/Google\ Drive/Computer/Dotfiles/.gist
 ln -sf ~/Google\ Drive/Computer/Dotfiles/.editorconfig
