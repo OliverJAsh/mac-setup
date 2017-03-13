@@ -162,4 +162,6 @@ brew cask install colorpicker-skalacolor
 # ghead -n-1 etc.
 brew install coreutils
 
+# adb, screen recording etc
 brew install android-platform-tools 
+brew cask install android-file-transfer
