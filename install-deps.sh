@@ -161,3 +161,5 @@ brew cask install colorpicker-skalacolor
 
 # ghead -n-1 etc.
 brew install coreutils
+
+brew install android-platform-tools 
