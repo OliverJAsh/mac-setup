@@ -165,3 +165,7 @@ brew install coreutils
 # adb, screen recording etc
 brew install android-platform-tools 
 brew cask install android-file-transfer
+
+brew install heroku
+
+brew install yarn --without-node
