@@ -52,6 +52,9 @@ defaults write com.apple.dock persistent-apps -array
 # Show date
 defaults write com.apple.menuextra.clock DateFormat -string "EEE d MMM  HH:mm"
 
+# Disable shadow in screenshots
+defaults write com.apple.screencapture disable-shadow -bool true
+
 # TODO: set default browser
 
 killall SystemUIServer
