@@ -10,6 +10,10 @@ cd ~
 
 sudo xcode-select --install
 
+# Disable Spotlight search results for Developer
+# https://www.howtogeek.com/231829/how-to-disable-developer-search-results-in-spotlight-on-a-mac/
+touch /Applications/Xcode.app
+
 # Install homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
