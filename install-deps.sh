@@ -173,3 +173,7 @@ brew cask install android-file-transfer
 brew install heroku
 
 brew install yarn --without-node
+
+# scutil --get HostName
+# CHeck it is Olivers-MBP, if not set:
+# scutil --set HostName Olivers-MBP
