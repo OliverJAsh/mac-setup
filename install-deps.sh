@@ -77,7 +77,7 @@ ln -sf ~/Google\ Drive/Computer/Dotfiles/.eslintrc
 
 ln -sf ~/Desktop/Custom\ commands/git-merge-pr /usr/local/bin/git-merge-pr
 ln -sf ~/Desktop/Custom\ commands/git-browse-pr /usr/local/bin/git-browse-pr
-ln -sf ~/Desktop/Custom\ commands/_git-merge-pr /usr/local/share/zsh/site-functions/_git_merge-pr
+ln -sf ~/Desktop/Custom\ commands/_git-merge-pr /usr/local/share/zsh/site-functions/_git-merge-pr
 
 echo "Setup Google accounts on Mac"
 read
