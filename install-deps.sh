@@ -172,6 +172,9 @@ brew cask install android-file-transfer
 
 brew install heroku
 
+heroku plugins:install autocomplete
+heroku plugins:install heroku-accounts
+
 brew install yarn --without-node
 
 # scutil --get HostName
