@@ -8,145 +8,142 @@ cd ~
 # Core Installations
 #
 
-sudo xcode-select --install
+# Xcode Command Line Tools
+# http://osxdaily.com/2014/02/12/install-command-line-tools-mac-os-x/
+xcode-select --install
+
+# Install Homebrew
+# https://brew.sh
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+brew install zsh
+# Zsh must be listed as a standard shell before we can switch to it.
+sudo bash -c 'echo $(which zsh) >> /etc/shells'
+chsh -s $(which zsh)
 
 # Disable Spotlight search results for Developer
 # https://www.howtogeek.com/231829/how-to-disable-developer-search-results-in-spotlight-on-a-mac/
+# https://apple.stackexchange.com/a/181326/31346
+# Note this creates an error when running `brew doctor`: "The directory Xcode is reportedly installed to doesn't exist"
 touch /Applications/Xcode.app
 
-# Install homebrew
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+echo "Open Spotlight preferences and uncheck everything except Applications, Calculator and System Preferences"
+read
 
-# Use zsh's built-in completions, i.e. /usr/local/Cellar/zsh/<version>/share/zsh/functions/_git
-brew install --without-completions git
-brew install zsh-completions
+brew install git
 
-# Install homebrew-cask for easily installing application binaries
-export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-brew tap caskroom/cask
-# ST3
-brew tap caskroom/versions
+# brew install zsh-completions
 
 brew cask install dropbox
 echo "Open Dropbox for configuration"
 read
 
 brew cask install 1password
-echo "Open 1Password for configuration and apply license"
+echo "Open 1Password, add vaults, and apply license"
 read
 
 brew cask install google-chrome
-brew cask install google-chrome-dev
-echo "Open Chrome and set up accounts for syncing + extensions."
+echo "Open Chrome and set up accounts."
 read
 
-echo "Set Google Chrome Dev as default web browser"
+echo "Set Chrome as default web browser"
 read
 
-brew cask install google-drive
+brew cask install google-backup-and-sync
 echo "Open Google Drive for configuration"
 read
 
-brew install zsh
-sudo sh -c 'echo "/usr/local/bin/zsh" >> /etc/shells'
-chsh -s /usr/local/bin/zsh
+#
+# Credentials
+#
 
-# hub, heroku credentials, etc.
-# ln -sf ~/Google\ Drive/Computer/Dotfiles/.config
 # We link individual directories instead of the whole config dir because it
 # may include large directories that we don't want to sync, i.e. yarn's node_modules
+brew install yarn --without-node
+
 # https://github.com/yarnpkg/yarn/issues/630#issuecomment-277837483
 mkdir -p ~/.config
-ln -sf ~/Google\ Drive/Computer/Dotfiles/.config/configstore ~/.config/configstore
-ln -sf ~/Google\ Drive/Computer/Dotfiles/.config/hub ~/.config/hub
 
-ln -sf ~/Google\ Drive/Computer/Dotfiles/.aws
-ln -sf ~/Google\ Drive/Computer/Dotfiles/.editorconfig
-ln -sf ~/Google\ Drive/Computer/Dotfiles/.gist
 ln -sf ~/Google\ Drive/Computer/Dotfiles/.gitconfig
 ln -sf ~/Google\ Drive/Computer/Dotfiles/.gitignore
-ln -sf ~/Google\ Drive/Computer/Dotfiles/.s3cfg
 ln -sf ~/Google\ Drive/Computer/Dotfiles/.ssh
 ln -sf ~/Google\ Drive/Computer/Dotfiles/.zshrc
+ln -sf ~/Google\ Drive/Computer/Dotfiles/.unsplash-env ~/Development/unsplash-web/.env
 
-ln -sf ~/Desktop/Custom\ commands/git-browse-commit /usr/local/bin/git-browse-commit
-ln -sf ~/Desktop/Custom\ commands/_git-browse-commit /usr/local/share/zsh/site-functions/_git-browse-commit
+ln -sf ~/Google\ Drive/Computer/Preferences/VS\ Code/settings.json ~/Library/Application\ Support/Code/User/settings.json
+ln -sf ~/Google\ Drive/Computer/Preferences/VS\ Code/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
+ln -sf ~/Google\ Drive/Computer/Preferences/VS\ Code/snippets ~/Library/Application\ Support/Code/User/snippets
 
-ln -sf ~/Desktop/Custom\ commands/git-pr-clean /usr/local/bin/git-pr-clean
-ln -sf ~/Desktop/Custom\ commands/_git-pr-clean /usr/local/share/zsh/site-functions/_git-pr-clean
+ln -sf ~/Google\ Drive/Computer/Preferences/Spectacle\ shortcuts.json ~/Library/Application\ Support/Spectacle/Shortcuts.json
 
-ln -sf ~/Desktop/Custom\ commands/git-rm-branch /usr/local/bin/git-rm-branch
-ln -sf ~/Desktop/Custom\ commands/_git-rm-branch /usr/local/share/zsh/site-functions/_git-rm-branch
+rm -rf ~/.bash*
 
-ln -sf ~/Desktop/Custom\ commands/git-stash-staged /usr/local/bin/git-stash-staged
-ln -sf ~/Desktop/Custom\ commands/_git-stash-staged /usr/local/share/zsh/site-functions/_git-stash-staged
-
-ln -sf ~/Desktop/Custom\ commands/git-pr-merge-and-clean /usr/local/bin/git-pr-merge-and-clean
-ln -sf ~/Desktop/Custom\ commands/_git-pr-merge-and-clean /usr/local/share/zsh/site-functions/_git-pr-merge-and-clean
-
-echo "Setup Google accounts on Mac"
+echo "Setup Google accounts on Mac for contacts and calendar"
 read
 
 brew install zsh-history-substring-search
 
 brew install nvm
+# As per `brew info nvm`
 mkdir ~/.nvm
 
-nvm install stable
-nvm alias default stable
+nvm install node # "node" is an alias for the latest version
 
-npm install --global pure-prompt
+brew install yarn --without-node
+
+yarn global add pure-prompt
 
 echo "Open and close terminal"
 read
 
-brew cask install iterm2-nightly
+brew cask install iterm2
 echo "Sync iTerm2 settings"
 read
-
-rm -rf .bash*
 
 brew install hub
 echo "Authenticate Hub by attempting to talk to the API (lame)."
 read
 
-brew install gist
+# brew install gist
 
 brew install z
 
-echo "Apply license for 1Password"
-read
+yarn global add trash-cli
 
-npm install -g trash
+yarn global add is-online-cli
 
 brew install tree
 
-# JDK -> JRE -> JVM
-brew cask install java
-
-npm install -g diff-so-fancy
+yarn global add diff-so-fancy
 
 brew cask install visual-studio-code
 
 sudo find / -name ".DS_Store" -depth -exec rm {} \;
 
-brew install awscli
-brew install s3cmd
+# https://devcenter.heroku.com/articles/heroku-cli
+brew install heroku/brew/heroku
 
-# ghead -n-1 etc.
-brew install coreutils
+# As per `brew info heroku`
+heroku autocomplete --refresh-cache
 
-# adb, screen recording etc
-brew install android-platform-tools
-brew cask install android-file-transfer
-
-brew install heroku
-
-heroku plugins:install autocomplete
 heroku plugins:install heroku-accounts
 
-brew install yarn --without-node
+heroku accounts:add personal
+heroku accounts:add unsplash
 
-# scutil --get HostName
-# Check it is Olivers-MBP, if not set:
-# scutil --set HostName Olivers-MBP
+brew cask install spectacle
+echo "Open Spectacle, set preferences: shortcuts and launch at login"
+read
+
+brew install fzf
+# As per `brew info fzf`
+/usr/local/opt/fzf/install
+
+cd ~/Google\ Drive/Computer/Custom\ scripts
+chmod +x ./install.sh
+./install.sh
+cd -
+
+brew install jq
+
+brew install travis
