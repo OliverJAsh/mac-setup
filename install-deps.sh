@@ -72,7 +72,8 @@ ln -sf ~/Google\ Drive/Computer/Dotfiles/.unsplash-env ~/Development/unsplash-we
 
 ln -sf ~/Google\ Drive/Computer/Preferences/VS\ Code/settings.json ~/Library/Application\ Support/Code/User/settings.json
 ln -sf ~/Google\ Drive/Computer/Preferences/VS\ Code/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
-ln -sf ~/Google\ Drive/Computer/Preferences/VS\ Code/snippets ~/Library/Application\ Support/Code/User/snippets
+trash ~/Library/Application\ Support/Code/User/snippets && \
+    ln -sf ~/Google\ Drive/Computer/Preferences/VS\ Code/snippets ~/Library/Application\ Support/Code/User/snippets
 
 ln -sf ~/Google\ Drive/Computer/Preferences/Spectacle\ shortcuts.json ~/Library/Application\ Support/Spectacle/Shortcuts.json
 
