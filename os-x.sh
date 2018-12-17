@@ -17,8 +17,10 @@
 # - Enable scroll gesture with modifier key to zoom
 # - Show bluetooth in menu bar
 # - Show date in menu bar
+# - Show volume in menu bar
 # - Configure Time Machine (disk, excluded)
 # - Configure keyboard backlight to turn off after 5 seconds of inactivity
+# - Software update -> automatically keep my Mac up to date
 
 # Disable shadow in screenshots
 # https://www.macgasm.net/2011/05/23/disable-dropshadow-mac-os-window-screenshots/

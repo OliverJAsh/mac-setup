@@ -21,6 +21,14 @@ brew install zsh
 sudo bash -c 'echo $(which zsh) >> /etc/shells'
 chsh -s $(which zsh)
 
+# This must be done before we create a dummy `/Applications/Xcode.app`,
+# otherwise `imagemagick` install will error.
+# https://github.com/vvo/gifify#requirements
+brew install ffmpeg --with-libass --with-fontconfig
+brew install imagemagick --with-fontconfig
+brew install giflossy
+yarn global add gifify
+
 # Disable Spotlight search results for Developer
 # https://www.howtogeek.com/231829/how-to-disable-developer-search-results-in-spotlight-on-a-mac/
 # https://apple.stackexchange.com/a/181326/31346
@@ -32,7 +40,7 @@ read
 
 brew install git
 
-# brew install zsh-completions
+brew install zsh-completions
 
 brew cask install dropbox
 echo "Open Dropbox for configuration"
