@@ -109,6 +109,10 @@ brew cask install iterm2
 echo "Sync iTerm2 settings"
 read
 
+# https://docs.brew.sh/Shell-Completion#configuring-completions-in-zsh
+# https://stackoverflow.com/questions/13762280/zsh-compinit-insecure-directories#comment93718809_22753363
+chmod go-w "$(brew --prefix)/share"
+
 brew install hub
 echo "Authenticate Hub by attempting to talk to the API (lame)."
 read
