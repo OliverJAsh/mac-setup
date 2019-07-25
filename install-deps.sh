@@ -86,7 +86,7 @@ ln -sf ~/Google\ Drive/Computer/Dotfiles/.gitignore
 ln -sf ~/Google\ Drive/Computer/Dotfiles/.ssh
 ln -sf ~/Google\ Drive/Computer/Dotfiles/.zshrc
 ln -sf ~/Google\ Drive/Computer/Dotfiles/.gist
-ln -sf ~/Google\ Drive/Computer/Dotfiles/.unsplash-env ~/Development/unsplash-web/.env
+ln -sf ~/Google\ Drive/Computer/Dotfiles/.unsplash-web-env ~/Development/unsplash-web/.env
 ln -sf ~/Google\ Drive/Computer/Dotfiles/.config/hub ~/.config/hub
 
 rm -rf ~/.bash*
