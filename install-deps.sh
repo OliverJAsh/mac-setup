@@ -4,6 +4,15 @@ set -e
 # Ensure we start in the user's home directory
 cd ~
 
+# Create backups
+echo "Backup ~/Development and ~/Pictures"
+read
+
+code --list-extensions > vs_code_extensions_list.txt
+
+echo "Backup vs_code_extensions_list.txt"
+read
+
 #
 # Core Installations
 #
