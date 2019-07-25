@@ -137,6 +137,8 @@ sudo find / -name ".DS_Store" -depth -exec rm {} \;
 brew tap heroku/brew
 brew install heroku
 
+heroku login
+
 # As per `brew info heroku`
 heroku autocomplete --refresh-cache
 
