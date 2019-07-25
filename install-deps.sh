@@ -83,8 +83,6 @@ ln -sf ~/Google\ Drive/Computer/Preferences/VS\ Code/keybindings.json ~/Library/
 trash ~/Library/Application\ Support/Code/User/snippets && \
     ln -sf ~/Google\ Drive/Computer/Preferences/VS\ Code/snippets ~/Library/Application\ Support/Code/User/snippets
 
-ln -sf ~/Google\ Drive/Computer/Preferences/Spectacle\ shortcuts.json ~/Library/Application\ Support/Spectacle/Shortcuts.json
-
 rm -rf ~/.bash*
 
 echo "Setup Google accounts on Mac for contacts and calendar"
@@ -148,7 +146,12 @@ heroku accounts:add personal
 heroku accounts:add unsplash
 
 brew cask install spectacle
-echo "Open Spectacle, set preferences: shortcuts and launch at login"
+echo "Open and close Spectacle"
+read
+
+ln -sf ~/Google\ Drive/Computer/Preferences/Spectacle\ shortcuts.json ~/Library/Application\ Support/Spectacle/Shortcuts.json
+
+echo "Open Spectable, set preferences: shortcuts, launch at login, run as background application"
 read
 
 brew install fzf
