@@ -22,6 +22,7 @@
 # - Configure keyboard backlight to turn off after 5 seconds of inactivity
 # - Software update -> automatically keep my Mac up to date
 # - Disable "show recent applications in Dock"
+# - Enable three finger drag
 
 # Disable shadow in screenshots
 # https://www.macgasm.net/2011/05/23/disable-dropshadow-mac-os-window-screenshots/
