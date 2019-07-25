@@ -24,8 +24,8 @@ chsh -s $(which zsh)
 # This must be done before we create a dummy `/Applications/Xcode.app`,
 # otherwise `imagemagick` install will error.
 # https://github.com/vvo/gifify#requirements
-brew install ffmpeg --with-libass --with-fontconfig
-brew install imagemagick --with-fontconfig
+brew install ffmpeg
+brew install imagemagick
 brew install giflossy
 yarn global add gifify
 
