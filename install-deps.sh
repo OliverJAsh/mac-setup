@@ -130,7 +130,8 @@ brew cask install visual-studio-code
 sudo find / -name ".DS_Store" -depth -exec rm {} \;
 
 # https://devcenter.heroku.com/articles/heroku-cli
-brew install heroku/brew/heroku
+brew tap heroku/brew
+brew install heroku
 
 # As per `brew info heroku`
 heroku autocomplete --refresh-cache
