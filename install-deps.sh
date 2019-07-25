@@ -77,6 +77,7 @@ ln -sf ~/Google\ Drive/Computer/Dotfiles/.gitignore
 ln -sf ~/Google\ Drive/Computer/Dotfiles/.ssh
 ln -sf ~/Google\ Drive/Computer/Dotfiles/.zshrc
 ln -sf ~/Google\ Drive/Computer/Dotfiles/.unsplash-env ~/Development/unsplash-web/.env
+ln -sf ~/Google\ Drive/Computer/Dotfiles/.config/hub ~/.config/hub
 
 ln -sf ~/Google\ Drive/Computer/Preferences/VS\ Code/settings.json ~/Library/Application\ Support/Code/User/settings.json
 ln -sf ~/Google\ Drive/Computer/Preferences/VS\ Code/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
