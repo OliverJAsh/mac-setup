@@ -187,3 +187,5 @@ brew cask install spotify
 
 echo "Open Spotify and login"
 read
+
+brew install bluetoothconnector
