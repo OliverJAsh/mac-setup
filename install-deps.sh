@@ -4,13 +4,13 @@ set -e
 # Ensure we start in the user's home directory
 cd ~
 
-# Create backups
-echo "Backup ~/Development and ~/Pictures"
-read
-
 code --list-extensions > vs_code_extensions_list.txt
 
-echo "Backup vs_code_extensions_list.txt"
+# Create backups
+echo "Backup ~/Development, ~/Pictures, vs_code_extensions_list.txt"
+read
+
+echo "Restore backups to new machine"
 read
 
 #
@@ -89,11 +89,6 @@ ln -sf ~/Google\ Drive/Computer/Dotfiles/.gist
 ln -sf ~/Google\ Drive/Computer/Dotfiles/.unsplash-env ~/Development/unsplash-web/.env
 ln -sf ~/Google\ Drive/Computer/Dotfiles/.config/hub ~/.config/hub
 
-ln -sf ~/Google\ Drive/Computer/Preferences/VS\ Code/settings.json ~/Library/Application\ Support/Code/User/settings.json
-ln -sf ~/Google\ Drive/Computer/Preferences/VS\ Code/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
-trash ~/Library/Application\ Support/Code/User/snippets && \
-    ln -sf ~/Google\ Drive/Computer/Preferences/VS\ Code/snippets ~/Library/Application\ Support/Code/User/snippets
-
 rm -rf ~/.bash*
 
 echo "Setup Google accounts on Mac for contacts and calendar"
@@ -139,6 +134,17 @@ brew install tree
 yarn global add diff-so-fancy
 
 brew cask install visual-studio-code
+
+echo "Open and Close VS Code"
+read
+
+ln -sf ~/Google\ Drive/Computer/Preferences/VS\ Code/settings.json ~/Library/Application\ Support/Code/User/settings.json
+ln -sf ~/Google\ Drive/Computer/Preferences/VS\ Code/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
+trash ~/Library/Application\ Support/Code/User/snippets && \
+    ln -sf ~/Google\ Drive/Computer/Preferences/VS\ Code/snippets ~/Library/Application\ Support/Code/User/snippets
+
+cat ~/vs_code_extensions_list.txt | xargs -n 1 code --install-extension
+trash vs_code_extensions_list.txt
 
 sudo find / -name ".DS_Store" -depth -exec rm {} \;
 
