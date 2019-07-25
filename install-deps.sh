@@ -182,3 +182,8 @@ cd -
 brew install jq
 
 brew install travis
+
+brew cask install spotify
+
+echo "Open Spotify and login"
+read
