@@ -67,7 +67,7 @@ read
 
 # We link individual directories instead of the whole config dir because it
 # may include large directories that we don't want to sync, i.e. yarn's node_modules
-brew install yarn --without-node
+brew install yarn
 
 # https://github.com/yarnpkg/yarn/issues/630#issuecomment-277837483
 mkdir -p ~/.config
@@ -98,7 +98,7 @@ mkdir ~/.nvm
 
 nvm install node # "node" is an alias for the latest version
 
-brew install yarn --without-node
+brew install yarn
 
 yarn global add pure-prompt
 
