@@ -30,23 +30,6 @@ brew install zsh
 sudo bash -c 'echo $(which zsh) >> /etc/shells'
 chsh -s $(which zsh)
 
-# This must be done before we create a dummy `/Applications/Xcode.app`,
-# otherwise `imagemagick` install will error.
-# https://github.com/vvo/gifify#requirements
-brew install ffmpeg
-brew install imagemagick
-brew install giflossy
-yarn global add gifify
-
-# Disable Spotlight search results for Developer
-# https://www.howtogeek.com/231829/how-to-disable-developer-search-results-in-spotlight-on-a-mac/
-# https://apple.stackexchange.com/a/181326/31346
-# Note this creates an error when running `brew doctor`: "The directory Xcode is reportedly installed to doesn't exist"
-touch /Applications/Xcode.app
-
-echo "Open Spotlight preferences and uncheck everything except Applications, Calculator and System Preferences"
-read
-
 brew install git
 
 brew install zsh-completions
@@ -76,7 +59,6 @@ read
 
 # We link individual directories instead of the whole config dir because it
 # may include large directories that we don't want to sync, i.e. yarn's node_modules
-brew install yarn
 
 # https://github.com/yarnpkg/yarn/issues/630#issuecomment-277837483
 mkdir -p ~/.config
@@ -104,6 +86,23 @@ nvm install node # "node" is an alias for the latest version
 
 brew install yarn
 
+# This must be done before we create a dummy `/Applications/Xcode.app`,
+# otherwise `imagemagick` install will error.
+# https://github.com/vvo/gifify#requirements
+brew install ffmpeg
+brew install imagemagick
+brew install giflossy
+yarn global add gifify
+
+# Disable Spotlight search results for Developer
+# https://www.howtogeek.com/231829/how-to-disable-developer-search-results-in-spotlight-on-a-mac/
+# https://apple.stackexchange.com/a/181326/31346
+# Note this creates an error when running `brew doctor`: "The directory Xcode is reportedly installed to doesn't exist"
+touch /Applications/Xcode.app
+
+echo "Open Spotlight preferences and uncheck everything except Applications, Calculator and System Preferences"
+read
+
 yarn global add pure-prompt
 
 echo "Open and close terminal"
@@ -121,7 +120,7 @@ brew install hub
 echo "Authenticate Hub by attempting to talk to the API (lame)."
 read
 
-# brew install gist
+brew install gist
 
 brew install z
 
