@@ -189,3 +189,5 @@ echo "Open Spotify and login"
 read
 
 brew install bluetoothconnector
+
+yarn global add yarn-deduplicate
