@@ -191,3 +191,5 @@ read
 brew install bluetoothconnector
 
 yarn global add yarn-deduplicate
+
+yarn global add np
