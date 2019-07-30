@@ -195,3 +195,5 @@ yarn global add yarn-deduplicate
 yarn global add np
 
 npm login
+
+brew cask install zoomus
