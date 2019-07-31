@@ -197,6 +197,8 @@ yarn global add np
 npm login
 
 brew cask install zoomus
+echo "Open Zoom, login"
+read
 
 brews cask install keycastr
 echo "Open KeyCastr"
