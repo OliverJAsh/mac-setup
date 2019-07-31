@@ -197,3 +197,7 @@ yarn global add np
 npm login
 
 brew cask install zoomus
+
+brews cask install keycastr
+echo "Open KeyCastr"
+read
