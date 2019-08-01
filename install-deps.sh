@@ -203,3 +203,5 @@ read
 brews cask install keycastr
 echo "Open KeyCastr"
 read
+
+brew cask install android-platform-tools
