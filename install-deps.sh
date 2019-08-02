@@ -205,3 +205,5 @@ echo "Open KeyCastr"
 read
 
 brew cask install android-platform-tools
+
+brew cask install ngrok
