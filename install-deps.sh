@@ -209,5 +209,7 @@ brew cask install android-platform-tools
 brew cask install ngrok
 
 # https://stackoverflow.com/questions/24342886/how-to-install-java-8-on-mac/32811065#32811065
-brew tap adoptopenjdk/openjdk
+# TODO
+# https://github.com/AdoptOpenJDK/homebrew-openjdk/issues/106
+# brew tap adoptopenjdk/openjdk
 brew cask install adoptopenjdk8
