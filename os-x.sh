@@ -15,6 +15,7 @@
 # System preferences
 # - Enable full keyboard access for all controls
 # - Enable scroll gesture with modifier key to zoom
+# - Enable App Exposé when swiping down with four fingers
 # - Show bluetooth in menu bar
 # - Show date in menu bar
 # - Show volume in menu bar
@@ -23,6 +24,9 @@
 # - Software update -> automatically keep my Mac up to date
 # - Disable "show recent applications in Dock"
 # - Enable three finger drag
+# - https://support.apple.com/en-gb/guide/mac-help/mh40596/mac
+
+# Download Spotify playlists
 
 # Disable shadow in screenshots
 # https://www.macgasm.net/2011/05/23/disable-dropshadow-mac-os-window-screenshots/
@@ -38,3 +42,5 @@ killall Dock
 
 echo "Set user avatar"
 read
+
+echo "Create shortcut for sleep. See https://www.quora.com/Is-there-a-keyboard-shortcut-to-put-the-2016-MacBook-pro-to-sleep/answer/Ephraim-Rothschild."

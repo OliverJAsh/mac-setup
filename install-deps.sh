@@ -213,3 +213,11 @@ brew cask install ngrok
 # https://github.com/AdoptOpenJDK/homebrew-openjdk/issues/106
 # brew tap adoptopenjdk/openjdk
 brew cask install adoptopenjdk8
+
+brew cask install adobe-creative-cloud
+echo "Sign into Adobe CC, install apps"
+read
+
+# For Selenium (?)
+brew cask install java8
+
