@@ -173,3 +173,5 @@ npm login
 brew install --cask zoom
 echo "Open Zoom, login"
 read
+
+brew install lazygit
