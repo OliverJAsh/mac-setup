@@ -81,9 +81,6 @@ nvm install node # "node" is an alias for the latest version
 
 brew install yarn
 
-echo "Open Spotlight preferences and uncheck everything except Applications, Calculator and System Preferences"
-read
-
 yarn global add pure-prompt
 
 echo "Open and close terminal"
