@@ -17,9 +17,8 @@ read
 # Core Installations
 #
 
-# Xcode Command Line Tools
-# http://osxdaily.com/2014/02/12/install-command-line-tools-mac-os-x/
-xcode-select --install
+echo "Install Xcode"
+read
 
 # Install Homebrew
 # https://brew.sh
