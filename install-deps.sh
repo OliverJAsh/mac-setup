@@ -175,3 +175,5 @@ echo "Open Zoom, login"
 read
 
 brew install lazygit
+
+brew install --cask slack
