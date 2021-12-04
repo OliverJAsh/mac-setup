@@ -1,5 +1,4 @@
 # Finder preferences:
-# - hide all items from desktop
 # - set new windows to show home folder
 # - hide everything from sidebar except:
 # - - Applications
@@ -9,15 +8,13 @@
 # - - Hard disks
 # - show all filename extensions
 
-# Menu bar
-# - Battery: show percentage
+# Configure Spotlight results
 
 # System preferences
 # - Enable full keyboard access for all controls
 # - Enable scroll gesture with modifier key to zoom
-# - Enable App Exposé when swiping down with four fingers
+# - Enable App Exposé when swiping down with three fingers
 # - Show bluetooth in menu bar
-# - Show date in menu bar
 # - Show volume in menu bar
 # - Configure Time Machine (disk, excluded)
 # - Configure keyboard backlight to turn off after 5 seconds of inactivity
