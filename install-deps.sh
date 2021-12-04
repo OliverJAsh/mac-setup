@@ -115,10 +115,10 @@ brew install --cask visual-studio-code
 echo "Open and Close VS Code"
 read
 
-ln -sf ~/Google\ Drive/Computer/Preferences/VS\ Code/settings.json ~/Library/Application\ Support/Code/User/settings.json
-ln -sf ~/Google\ Drive/Computer/Preferences/VS\ Code/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
+ln -sf ~/Google\ Drive/My\ Drive/Computer/Preferences/VS\ Code/settings.json ~/Library/Application\ Support/Code/User/settings.json
+ln -sf ~/Google\ Drive/My\ Drive/Computer/Preferences/VS\ Code/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
 trash ~/Library/Application\ Support/Code/User/snippets && \
-    ln -sf ~/Google\ Drive/Computer/Preferences/VS\ Code/snippets ~/Library/Application\ Support/Code/User/snippets
+    ln -sf ~/Google\ Drive/My\ Drive/Computer/Preferences/VS\ Code/snippets ~/Library/Application\ Support/Code/User/snippets
 
 cat ~/vs_code_extensions_list.txt | xargs -n 1 code --install-extension
 trash vs_code_extensions_list.txt
@@ -173,6 +173,8 @@ npm login
 brew install --cask zoom
 echo "Open Zoom, login"
 read
+
+ln -sf ~/Google\ Drive/My\ Drive/Computer/Preferences/lazygit/config.yml /Users/oliverash/Library/Application\ Support/jesseduffield/lazygit/config.yml
 
 brew install lazygit
 
