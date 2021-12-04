@@ -48,7 +48,7 @@ read
 echo "Set Chrome as default web browser"
 read
 
-brew install --cask google-backup-and-sync
+brew install --cask google-drive
 echo "Open Google Drive for configuration"
 read
 
