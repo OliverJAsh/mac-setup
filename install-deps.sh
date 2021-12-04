@@ -68,7 +68,6 @@ ln -sf ~/Google\ Drive/My\ Drive/Computer/Dotfiles/.ssh
 ln -sf ~/Google\ Drive/My\ Drive/Computer/Dotfiles/.zshrc
 ln -sf ~/Google\ Drive/My\ Drive/Computer/Dotfiles/.gist
 ln -sf ~/Google\ Drive/My\ Drive/Computer/Dotfiles/.unsplash-web-env ~/Development/unsplash-web/.env
-ln -sf ~/Google\ Drive/My\ Drive/Computer/Dotfiles/.config/hub ~/.config/hub
 
 echo "Setup Google accounts on Mac for contacts and calendar"
 read
