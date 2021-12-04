@@ -89,6 +89,9 @@ yarn global add pure-prompt
 echo "Open and close terminal"
 read
 
+brew tap homebrew/cask-fonts
+brew install --cask font-jetbrains-mono
+
 brew install --cask iterm2
 echo "Sync iTerm2 settings"
 read
