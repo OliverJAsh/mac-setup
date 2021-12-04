@@ -171,7 +171,7 @@ brew install --cask zoom
 echo "Open Zoom, login"
 read
 
-ln -sf ~/Google\ Drive/My\ Drive/Computer/Preferences/lazygit/config.yml /Users/oliverash/Library/Application\ Support/jesseduffield/lazygit/config.yml
+ln -sf ~/Google\ Drive/My\ Drive/Computer/Preferences/lazygit/config.yml /Users/oliverash/Library/Application\ Support/lazygit/config.yml
 
 brew install lazygit
 
