@@ -22,7 +22,7 @@ read
 
 # Install Homebrew
 # https://brew.sh
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 brew install zsh
 # Zsh must be listed as a standard shell before we can switch to it.
