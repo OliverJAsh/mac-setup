@@ -13,7 +13,7 @@
 # System preferences
 # - Enable full keyboard access for all controls
 # - Enable scroll gesture with modifier key to zoom
-# - Enable App Exposé when swiping down with three fingers
+# - Enable App Exposé when swiping down with four fingers
 # - Show bluetooth in menu bar
 # - Show volume in menu bar
 # - Configure Time Machine (disk, excluded)
