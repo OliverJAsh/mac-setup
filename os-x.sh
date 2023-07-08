@@ -28,4 +28,5 @@
 defaults write com.apple.dock persistent-apps -array
 # Remove all folders from dock
 defaults write com.apple.dock persistent-others -array
+defaults write com.apple.dock show-recents -bool false
 killall Dock
